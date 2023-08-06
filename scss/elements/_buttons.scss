@@ -1,0 +1,53 @@
+// BUTTONS
+.btn {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    border-radius: $border-radius * 0.375;
+    border: 1px solid $border-color;
+    padding: $spacing * 0.375 $spacing * 0.75;
+    font-size: $font-size;
+    margin-bottom: $spacing / 2;
+}
+
+// Button colors
+@each $key, $val in $colors {
+    .btn-#{$key} {
+        background: $val;
+        color: #fff;
+        border-color: $val;
+
+        &:hover {
+            background: darken($val, 10%);
+        }
+    }
+
+    .btn-outline-#{$key} {
+        background: transparent;
+        color: $val;
+        border-color: $val;
+
+        &:hover {
+            background: $val;
+            color: $white;
+        }
+    }
+}
+
+// Button size
+.btn-s {
+    padding: $spacing / 4 $spacing / 2;
+    font-size: $font-size * 0.8;
+    border-radius: $border-radius / 4;
+}
+.btn-l {
+    padding: $spacing / 2 $spacing;
+    font-size: $font-size * 1.25;
+    border-radius: $border-radius / 2;
+}
+.btn-fullwidth {
+    width: 100%;
+}
