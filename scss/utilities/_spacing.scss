@@ -1,0 +1,123 @@
+$margin : (
+    '0': 0,
+    '1': $spacing / 4,
+    '2': $spacing / 2,
+    '3': $spacing,
+    '4': $spacing * 1.5,
+    '5': $spacing * 3,
+    'auto': auto
+);
+$margin-size : (
+    'small': $spacing / 2,
+    'medium': $spacing,
+    'large': $spacing * 2
+);
+$padding : (
+    '0': 0,
+    '1': $spacing / 4,
+    '2': $spacing / 2,
+    '3': $spacing,
+    '4': $spacing * 1.5,
+    '5': $spacing * 3
+);
+$padding-numbers : (
+    '16': $spacing,
+    '24': $spacing * 1.5,
+    '32': $spacing * 2,
+    '48': $spacing * 3,
+    '64': $spacing * 4
+);
+$padding-size : (
+    'small': $spacing / 4 $spacing / 2,
+    'medium': $spacing / 2 $spacing,
+    'large': $spacing * 0.75 $spacing * 1.5
+);
+
+// Margins
+@each $key, $val in $margin {
+    .m-#{$key} {
+        margin: $val;
+    }
+    .mt-#{$key} {
+        margin-top: $val;
+    }
+    .mb-#{$key} {
+        margin-bottom: $val;
+    }
+    .ml-#{$key} {
+        margin-left: $val;
+    }
+    .mr-#{$key} {
+        margin-right: $val;
+    }
+    .mx-#{$key} {
+        margin-left: $val;
+        margin-right: $val;
+    }
+    .my-#{$key} {
+        margin-top: $val;
+        margin-bottom: $val;
+    }
+}
+@each $key, $val in $margin-size {
+    .m-#{$key} {
+        margin: $val;
+    }
+    .mt-#{$key} {
+        margin-top: $val;
+    }
+    .mb-#{$key} {
+        margin-bottom: $val;
+    }
+    .ml-#{$key} {
+        margin-left: $val;
+    }
+    .mr-#{$key} {
+        margin-right: $val;
+    }
+    .mx-#{$key} {
+        margin-left: $val;
+        margin-right: $val;
+    }
+    .my-#{$key} {
+        margin-top: $val;
+        margin-bottom: $val;
+    }
+}
+
+// Paddings
+@each $key, $val in $padding {
+    .p-#{$key} {
+        padding: $val;
+    }
+    .pt-#{$key} {
+        padding-top: $val;
+    }
+    .pb-#{$key} {
+        padding-bottom: $val;
+    }
+    .pl-#{$key} {
+        padding-left: $val;
+    }
+    .pr-#{$key} {
+        padding-right: $val;
+    }
+    .px-#{$key} {
+        padding-left: $val;
+        padding-right: $val;
+    }
+    .py-#{$key} {
+        padding-top: $val;
+        padding-bottom: $val;
+    }
+}
+@each $key, $val in $padding-numbers {
+    .p-#{$key} {
+        padding: $val 0;
+    }
+}
+@each $key, $val in $padding-size {
+    .p-#{$key} {
+        padding: $val;
+    }
+}

@@ -1,0 +1,85 @@
+$align : (
+    'left': left,
+    'center': center,
+    'right': right,
+    'justify': justify
+);
+$transform: (
+    'lowercase': lowercase,
+    'uppercase': uppercase,
+    'capitalize': capitalize
+);
+$decoration: (
+    'underline': underline,
+    'overline': overline,
+    'line-through': line-through,
+    'no-underline': none
+);
+$size: (
+    'xs': $font-size * 0.625,
+    's': $font-size * 0.75,
+    'm': $font-size,
+    'l': $font-size * 1.25,
+    'xl': $font-size * 1.5,
+    '2xl': $font-size * 2.25,
+    '3xl': $font-size * 3,
+    'jumbo': $font-size * 4
+);
+$weight: (
+    'thin': 100,
+    'extralight': 200,
+    'light': 300,
+    'normal': 400,
+    'medium': 500,
+    'semibold': 600,
+    'bold': 700,
+    'extrabold': 800,
+    'black': 900
+);
+
+// Text align
+@each $key, $val in $align {
+    .txt-#{$key} {
+        text-align: $val;
+    }
+}
+// Text transform
+@each $key, $val in $transform {
+    .txt-#{$key} {
+        text-transform: $val;
+    }
+}
+.txt-italic {
+    font-style: italic;
+}
+.txt-wide {
+    letter-spacing: $spacing / 4;
+}
+// Text decoration
+@each $key, $val in $decoration {
+    .txt-#{$key} {
+        text-decoration: $val;
+    }
+}
+@each $key, $val in $size {
+    .txt-#{$key} {
+        font-size: $val;
+    }
+}
+// Font weight
+@each $key, $val in $weight {
+    .font-#{$key} {
+        font-weight: $val;
+    }
+}
+
+// Font family
+.font-sans {
+    font-family: $font-sans;
+}
+.font-serif {
+    font-family: $font-serif;
+}
+.font-mono {
+    font-family: $font-mono;
+}

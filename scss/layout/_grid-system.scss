@@ -1,0 +1,79 @@
+.row {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    &::before {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+.clearfix {
+    &::after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+@for $i from 1 through 12 {
+    .col-s-#{$i} {
+        flex: 0 0 auto;
+        width: (100% / 12) * $i;
+    }
+}
+@for $i from 0 through 11 {
+    .offset-s-#{$i} {
+        margin-left: (100% / 12) * $i;
+    }
+}
+
+@media (min-width: 768px) {
+    @for $i from 1 through 12 {
+        .col-m-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / 12) * $i;
+        }
+    }
+    @for $i from 0 through 11 {
+        .offset-m-#{$i} {
+            margin-left: (100% / 12) * $i;
+        }
+    }
+}
+
+@media (min-width: 1024px) {
+    @for $i from 1 through 12 {
+        .col-l-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / 12) * $i;
+        }
+    }
+    @for $i from 0 through 11 {
+        .offset-l-#{$i} {
+            margin-left: (100% / 12) * $i;
+        }
+    }
+}
+
+@media (min-width: 1440px) {
+    @for $i from 1 through 12 {
+        .col-xl-#{$i} {
+            flex: 0 0 auto;
+            width: (100% / 12) * $i;
+        }
+    }
+    @for $i from 0 through 11 {
+        .offset-xl-#{$i} {
+            margin-left: (100% / 12) * $i;
+        }
+    }
+}

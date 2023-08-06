@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dorothy CSS</title>
+    <link rel="stylesheet" href="css/dorothy.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Dorothy CSS</h1>
+
+        <h1>TYPOGRAPHY</h1>
+        <h1>Heading H1</h1>
+        <h2>Heading H2</h2>
+        <h3>Heading H3</h3>
+        <h4>Heading H4</h4>
+        <h5>Heading H5</h5>
+        <h6>Heading H6</h6>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Est, ut?</p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem amet at qui. Voluptate, mollitia eaque.</p>
+        <hr>
+        <h1>JS COMPONENTS</h1>
+        <H2>ALERTS</H2>
+        <div class="alert">
+            <span class="close-btn" data-type="close-alert">&times;</span>
+            This is alert component
+        </div>
+        <div class="alert alert-success">
+            This is success alert
+            <span class="close-btn" data-type="close-alert">&times;</span>
+        </div>
+        <div class="alert alert-info">
+            This is info alert
+            <span class="close-btn" data-type="close-alert">&times;</span>
+        </div>
+        <div class="alert alert-warning">
+            This is warning alert
+            <span class="close-btn" data-type="close-alert">&times;</span>
+        </div>
+        <div class="alert alert-danger">
+            This is danger alert
+            <span class="close-btn" data-type="close-alert">&times;</span>
+        </div>
+        <h2>MODAL</h2>
+        <button data-type="open-modal">Open Modal 1</button>
+        <!-- The Modal -->
+        <div class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close-btn" data-type="close-modal">&times;</span>
+                <p>Some text in Modal 1..</p>
+            </div>
+        </div> 
+
+        <button data-type="open-modal">Open Modal 2</button>
+        <!-- The Modal -->
+        <div class="modal">
+        <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close-btn" data-type="close-modal">&times;</span>
+                <p>Another modal and another content for Modal 2</p>
+            </div>
+        </div>
+        <hr>
+        <h1>COMPONENTS</h1>
+        <h2>BADGES</h2>
+        <p>Updates <span class="badge">9</span></p>
+        <p>News <span class="badge badge-green">6</span></p>
+        <p>Comments <span class="badge badge-red">8</span></p>
+        <br>
+        <h2>TOOLTIPS</h2>
+        <div class="tooltip" style="margin: 0 auto;">
+            <div class="tooltip-content" data-tooltip-position="top" data-tooltip-data="Top Tooltip">Top Tooltip</div>
+        </div>
+        <div class="tooltip">
+            <div class="tooltip-content" data-tooltip-position="left" data-tooltip-data="Left Tooltip">Left Tooltip</div>
+        </div>
+        <div class="tooltip">
+            <div class="tooltip-content" data-tooltip-position="bottom" data-tooltip-data="Bottom Tooltip">Bottom Tooltip</div>
+        </div>
+        <div class="tooltip">
+            <div class="tooltip-content" data-tooltip-position="right" data-tooltip-data="Right Tooltip">Right Tooltip</div>
+        </div>      
+          
+        <hr>
+        <h1>NAVIGATION</h1>
+        <h2>BREADCRUMBS</h2>
+        <ul class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pictures</a></li>
+            <li><a href="#">Summer 15</a></li>
+            <li>Italy</li>
+        </ul>
+        <hr>
+        <h1>UTILITIES</h1>
+        <h2>COLORS</h2>
+        <span class="bg-gray">bg-gray</span> | <span class="bg-dark-gray">bg-dark-gray</span> |
+        <span class="bg-olive">bg-olive</span> | <span class="bg-brown">bg-brown</span> |
+        <span class="bg-blue-gray">bg-blue-gray</span> | <span class="bg-red">bg-red</span> |
+        <span class="bg-orange">bg-orange</span> | <span class="bg-deep-orange">bg-deep-orange</span> |
+        <span class="bg-amber">bg-amber</span> | <span class="bg-yellow">bg-yellow</span> |
+        <span class="bg-lime">bg-lime</span> | <span class="bg-green">bg-green</span> |
+        <span class="bg-light-green">bg-light-green</span> | <span class="bg-emerald">bg-emerald</span> |
+        <span class="bg-teal">bg-teal</span> | <span class="bg-aqua">bg-aqua</span> |
+        <span class="bg-cyan">bg-cyan</span> | <span class="bg-sky">bg-sky</span> |
+        <span class="bg-blue">bg-blue</span> | <span class="bg-light-blue">bg-light-blue</span> |
+        <span class="bg-indigo">bg-indigo</span> | <span class="bg-violet">bg-violet</span> |
+        <span class="bg-purple">bg-purple</span> | <span class="bg-deep-purple">bg-deep-purple</span> |
+        <span class="bg-fuchsia">bg-fuchsia</span> | <span class="bg-pink">bg-pink</span> |
+        <span class="bg-rose">bg-rose</span> | <span class="bg-black">bg-black</span> |
+        <span class="bg-primary">bg-primary</span> | <span class="bg-success">bg-success</span> |
+        <span class="bg-danger">bg-danger</span> | <span class="bg-warning">bg-warning</span> |
+        <span class="bg-info">bg-info</span>
+        <br>
+        <span class="txt-gray">txt-gray</span> | <span class="txt-dark-gray">txt-dark-gray</span> |
+        <span class="txt-olive">txt-olive</span> | <span class="txt-brown">txt-brown</span> |
+        <span class="txt-blue-gray">txt-blue-gray</span> | <span class="txt-red">txt-red</span> |
+        <span class="txt-orange">txt-orange</span> | <span class="txt-deep-orange">txt-deep-orange</span> |
+        <span class="txt-amber">txt-amber</span> | <span class="txt-yellow">txt-yellow</span> |
+        <span class="txt-lime">txt-lime</span> | <span class="txt-green">txt-green</span> |
+        <span class="txt-light-green">txt-light-green</span> | <span class="txt-emerald">txt-emerald</span> |
+        <span class="txt-teal">txt-teal</span> | <span class="txt-aqua">txt-aqua</span> |
+        <span class="txt-cyan">txt-cyan</span> | <span class="txt-sky">txt-sky</span> |
+        <span class="txt-blue">txt-blue</span> | <span class="txt-light-blue">txt-light-blue</span> |
+        <span class="txt-indigo">txt-indigo</span> | <span class="txt-violet">txt-violet</span> |
+        <span class="txt-purple">txt-purple</span> | <span class="txt-deep-purple">txt-deep-purple</span> |
+        <span class="txt-fuchsia">txt-fuchsia</span> | <span class="txt-pink">txt-pink</span> |
+        <span class="txt-rose">txt-rose</span> | <span class="txt-black">txt-black</span> |
+        <span class="txt-primary">txt-primary</span> | <span class="txt-success">txt-success</span> |
+        <span class="txt-danger">txt-danger</span> | <span class="txt-warning">txt-warning</span> |
+        <span class="txt-info">txt-info</span>
+        <br>
+        <h2>TYPOGRAPHY</h2>
+        <p class="txt-left">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Asperiores porro explicabo neque ex accusantium vero.</p>
+        <p class="txt-center">Lorem ipsum dolor sit amet.</p>
+        <p class="txt-right">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, illum.</p>
+        <p class="txt-justify">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum, dolorum provident hic voluptate minus repellat eos, maiores eius soluta, dolores tenetur quis atque corporis illo repudiandae sit quia suscipit iure!</p>
+    </div>
+    <!-- <script src="dorothy.js"></script> -->
+    <script src="dorothy-jquery.js"></script>
+</body>
+</html>

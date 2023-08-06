@@ -1,0 +1,67 @@
+// SCSS variables
+$tooltip-padding: $spacing / 4;
+$tooltip-background: $black;
+$tooltip-color: $white;
+
+// Mixin to create tooltips
+@mixin tooltip {
+  position: relative;
+  cursor: pointer;
+  &:before {
+    content: attr(data-tooltip-data);
+    position: absolute;
+    padding: $tooltip-padding;
+    background-color: $tooltip-background;
+    color: $tooltip-color;
+    border-radius: $border-radius / 4;
+    display: none;
+    white-space: nowrap;
+    z-index: 1;
+  }
+  &:hover:before {
+    display: block;
+  }
+}
+
+// Styles for the tooltip container
+.tooltip {
+    display: inline-block;
+}
+
+// Apply tooltips to all tooltip elements
+.tooltip-content {
+  @include tooltip;
+}
+
+// Position each tooltip according to its data-tooltip-position attribute
+.tooltip-content[data-tooltip-position="top"] {
+  &:before {
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tooltip-content[data-tooltip-position="left"] {
+  &:before {
+    top: 50%;
+    right: 100%;
+    transform: translateY(-50%);
+  }
+}
+
+.tooltip-content[data-tooltip-position="bottom"] {
+  &:before {
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.tooltip-content[data-tooltip-position="right"] {
+  &:before {
+    top: 50%;
+    left: 100%;
+    transform: translateY(-50%);
+  }
+}

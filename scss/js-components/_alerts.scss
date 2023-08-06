@@ -1,0 +1,62 @@
+$pale-red: #fdd;
+$pale-green: #dfd;
+$pale-blue: #dff;
+$pale-yellow: #ffc;
+
+.alert {
+    background: $background;
+    padding: $spacing;
+    margin-bottom: $spacing;
+    border: 1px solid $border-color;
+    border-radius: $border-radius / 4;
+
+    .close-btn {
+        float: right;
+        cursor: pointer;
+        font-size: $font-size * 1.5;
+        line-height: 1;
+        font-weight: bold;
+        transition: 0.3s;
+        opacity: 0.8;
+
+        &:hover {
+            opacity: 1;
+        }
+    }
+}
+.alert-success {
+    background: $pale-green;
+    color: $green;
+    border: 1px solid rgba($green, 0.5);
+
+    .close-btn {
+        color: $green;
+    }
+}
+.alert-info {
+    background: $pale-blue;
+    color: $cyan;
+    border: 1px solid rgba($cyan, 0.5);
+
+    .close-btn {
+        color: $cyan;
+    }
+}
+.alert-warning {
+    background: $pale-yellow;
+    color: $yellow;
+    border: 1px solid rgba($yellow, 0.5);
+
+    .close-btn {
+        color: $yellow;
+    }
+}
+.alert-danger {
+    background: $pale-red;
+    color: $red;
+    border: 1px solid rgba($red, 0.5);
+
+    .close-btn {
+        color: $red;
+    }
+}
